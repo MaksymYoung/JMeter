@@ -1,0 +1,350 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1788733590662,287,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,53067,598,5,5,null,0,1070,48
+1788733590468,288,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,53067,598,5,5,null,0,1263,48
+1788733590080,287,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,53067,598,5,5,null,0,1652,48
+1788733591607,288,OpenApplication,200,OK,S01_Browse_And_Checkout 1-4,text,true,,53067,598,5,5,http://localhost/,285,0,48
+1788733589917,288,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,53067,598,5,5,null,0,1814,48
+1788733591607,287,OpenApplication,200,OK,S01_Browse_And_Checkout 1-2,text,true,,53067,598,5,5,http://localhost/,285,0,48
+1788733591607,288,OpenApplication,200,OK,S01_Browse_And_Checkout 1-1,text,true,,53067,598,5,5,http://localhost/,285,0,48
+1788733590275,287,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,53067,598,5,5,null,0,1457,48
+1788733591607,287,OpenApplication,200,OK,S01_Browse_And_Checkout 1-5,text,true,,53067,598,5,5,http://localhost/,285,0,48
+1788733591607,287,OpenApplication,200,OK,S01_Browse_And_Checkout 1-3,text,true,,53067,598,5,5,http://localhost/,285,0,48
+1788733594030,187,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,50851,763,5,5,null,0,14,0
+1788733594033,192,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,50851,763,5,5,null,0,7,0
+1788733594034,187,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-3,text,true,,50851,763,5,5,http://localhost/tables,186,0,0
+1788733594035,192,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-4,text,true,,50851,763,5,5,http://localhost/tables,189,0,0
+1788733594032,203,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,50851,763,5,5,null,0,4,0
+1788733594033,203,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-1,text,true,,50851,763,5,5,http://localhost/tables,199,0,0
+1788733594030,210,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,50851,763,5,5,null,0,6,0
+1788733594033,210,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-2,text,true,,50851,763,5,5,http://localhost/tables,201,0,0
+1788733594032,215,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,50851,763,5,5,null,0,2,0
+1788733594033,215,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-5,text,true,,50851,763,5,5,http://localhost/tables,207,0,0
+1788733597509,205,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,47072,786,5,5,null,0,17,0
+1788733597513,205,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,47072,786,5,5,http://localhost/products/kitchen-table1,193,0,0
+1788733597421,241,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47015,790,5,5,null,0,69,0
+1788733597423,241,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47015,790,5,5,http://localhost/products/living-room-table7,199,0,0
+1788733597698,229,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46851,786,5,5,null,0,5,0
+1788733597699,229,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46851,786,5,5,http://localhost/products/kitchen-table1,160,0,0
+1788733598148,167,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47380,790,5,5,null,0,4,0
+1788733598149,167,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47380,790,5,5,http://localhost/products/living-room-table4,157,0,0
+1788733598508,197,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,47181,790,5,5,null,0,4,0
+1788733598510,197,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,47181,790,5,5,http://localhost/products/living-room-table4,148,0,0
+1788733602157,81,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1056,5,5,null,0,8,0
+1788733601989,128,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1051,5,5,null,0,129,0
+1788733602158,81,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,81,0,0
+1788733601991,128,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1051,5,5,http://localhost/wp-admin/admin-ajax.php,127,0,0
+1788733602248,69,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1056,5,5,null,0,3,0
+1788733602249,69,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,68,0,0
+1788733602252,69,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1051,5,5,null,0,3,0
+1788733602253,69,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1051,5,5,http://localhost/wp-admin/admin-ajax.php,69,0,0
+1788733602878,119,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1056,5,5,null,0,5,0
+1788733602879,119,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,119,0,0
+1788733605447,264,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,53066,598,5,5,null,0,11,0
+1788733605451,264,OpenApplication,200,OK,S01_Browse_And_Checkout 1-3,text,true,,53066,598,5,5,http://localhost/,192,0,0
+1788733605706,188,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46976,790,5,5,null,0,3,0
+1788733605707,188,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46976,790,5,5,http://localhost/chairs,184,0,0
+1788733605640,255,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,53066,598,5,5,null,0,12,0
+1788733605649,255,OpenApplication,200,OK,S01_Browse_And_Checkout 1-5,text,true,,53066,598,5,5,http://localhost/,207,0,0
+1788733606198,166,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,46976,790,5,5,null,0,2,0
+1788733606199,166,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-4,text,true,,46976,790,5,5,http://localhost/chairs,164,0,0
+1788733606492,255,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,53066,598,5,5,null,0,9,0
+1788733606497,255,OpenApplication,200,OK,S01_Browse_And_Checkout 1-1,text,true,,53066,598,5,5,http://localhost/,207,0,0
+1788733607724,172,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,50851,763,5,5,null,0,1,0
+1788733607724,172,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-3,text,true,,50851,763,5,5,http://localhost/tables,171,0,0
+1788733607909,169,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,50851,763,5,5,null,0,1,0
+1788733607909,169,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-5,text,true,,50851,763,5,5,http://localhost/tables,165,0,0
+1788733608759,187,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,50851,763,5,5,null,0,3,0
+1788733608761,187,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-1,text,true,,50851,763,5,5,http://localhost/tables,185,0,0
+1788733610063,168,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47483,786,5,5,null,0,4,0
+1788733610064,168,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47483,786,5,5,http://localhost/products/ancient-chair3,167,0,0
+1788733610220,179,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47068,785,5,5,null,0,6,0
+1788733610222,179,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47068,785,5,5,http://localhost/products/modern-chair7,177,0,0
+1788733611322,213,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46614,778,5,5,null,0,3,0
+1788733611323,213,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46614,778,5,5,http://localhost/products/table1,164,0,0
+1788733611783,243,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,47436,790,5,5,null,0,4,0
+1788733611784,243,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,47436,790,5,5,http://localhost/products/living-room-table4,152,0,0
+1788733612613,177,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,47224,790,5,5,null,0,3,0
+1788733612614,177,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,47224,790,5,5,http://localhost/products/living-room-table2,168,0,0
+1788733614436,122,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1082,5,5,null,0,30,0
+1788733614437,122,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1082,5,5,http://localhost/wp-admin/admin-ajax.php,122,0,0
+1788733614539,105,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1043,5,5,null,0,4,0
+1788733614540,105,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1043,5,5,http://localhost/wp-admin/admin-ajax.php,105,0,0
+1788733614923,105,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1081,5,5,null,0,3,0
+1788733614924,105,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,105,0,0
+1788733615735,72,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1056,5,5,null,0,3,0
+1788733615735,72,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,72,0,0
+1788733616690,124,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1056,5,5,null,0,4,0
+1788733616691,124,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,124,0,0
+1788733618936,181,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46976,778,5,5,null,0,1,0
+1788733618936,181,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46976,778,5,5,http://localhost/chairs,179,0,0
+1788733619135,129,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,38908,784,5,5,null,0,2,0
+1788733619136,129,OpenCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,38908,784,5,5,http://localhost/cart,126,0,0
+1788733619345,314,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,53066,598,5,5,null,0,8,0
+1788733619349,314,OpenApplication,200,OK,S01_Browse_And_Checkout 1-4,text,true,,53066,598,5,5,http://localhost/,196,0,0
+1788733619610,223,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,53066,598,5,5,null,0,8,0
+1788733619615,223,OpenApplication,200,OK,S01_Browse_And_Checkout 1-5,text,true,,53066,598,5,5,http://localhost/,183,0,0
+1788733621258,182,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,46976,790,5,5,null,0,4,0
+1788733621260,182,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-1,text,true,,46976,790,5,5,http://localhost/chairs,179,0,0
+1788733621667,178,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,50851,763,5,5,null,0,3,0
+1788733621668,178,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-4,text,true,,50851,763,5,5,http://localhost/tables,175,0,0
+1788733621842,174,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,50851,763,5,5,null,0,2,0
+1788733621843,174,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-5,text,true,,50851,763,5,5,http://localhost/tables,174,0,0
+1788733623680,158,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46927,786,5,5,null,0,5,0
+1788733623681,158,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46927,786,5,5,http://localhost/products/ancient-chair6,157,0,0
+1788733623849,322,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,131608,1787,5,5,null,0,262,0
+1788733623885,182,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-2,text,true,,65804,769,5,5,http://localhost/checkout,179,0,0
+1788733624293,140,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-2,text,true,,65804,1018,5,5,http://localhost/checkout,138,0,0
+1788733625392,223,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,47240,790,5,5,null,0,4,0
+1788733625393,223,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,47240,790,5,5,http://localhost/products/living-room-table1,175,0,0
+1788733625503,157,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,47123,786,5,5,null,0,4,0
+1788733625504,157,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,47123,786,5,5,http://localhost/products/ancient-chair3,155,0,0
+1788733625739,209,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47089,790,5,5,null,0,4,0
+1788733625740,209,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47089,790,5,5,http://localhost/products/living-room-table1,161,0,0
+1788733628096,125,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1081,5,5,null,0,5,0
+1788733628098,125,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,125,0,0
+1788733628925,67,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,612,959,5,5,null,0,1,0
+1788733628926,67,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-2,text,true,,612,959,5,5,http://localhost/wp-admin/admin-ajax.php,67,0,0
+1788733629085,159,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1056,5,5,null,0,2,0
+1788733629085,159,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,159,0,0
+1788733629750,105,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1082,5,5,null,0,3,0
+1788733629750,105,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1082,5,5,http://localhost/wp-admin/admin-ajax.php,105,0,0
+1788733629911,110,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1056,5,5,null,0,3,0
+1788733629912,110,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,110,0,0
+1788733631552,135,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,38884,784,5,5,null,0,2,0
+1788733631553,135,OpenCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,38884,784,5,5,http://localhost/cart,134,0,0
+1788733632439,168,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,46976,790,5,5,null,0,3,0
+1788733632441,168,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-5,text,true,,46976,790,5,5,http://localhost/chairs,166,0,0
+1788733633385,265,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,53066,598,5,5,null,0,9,0
+1788733633389,265,OpenApplication,200,OK,S01_Browse_And_Checkout 1-1,text,true,,53066,598,5,5,http://localhost/,217,0,0
+1788733633521,326,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,508,6531,5,5,null,0,180,0
+1788733633700,326,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-2,text,true,,508,6531,5,5,http://localhost/checkout,326,0,0
+1788733634453,120,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,38284,788,5,5,null,0,3,0
+1788733634454,120,OpenCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,38284,788,5,5,http://localhost/cart,118,0,0
+1788733635661,178,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,50851,763,5,5,null,0,1,0
+1788733635661,178,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-1,text,true,,50851,763,5,5,http://localhost/tables,176,0,0
+1788733636227,275,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,131566,1785,5,5,null,0,9,0
+1788733636229,143,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-3,text,true,,65783,769,5,5,http://localhost/checkout,141,0,0
+1788733636379,132,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-3,text,true,,65783,1016,5,5,http://localhost/checkout,131,0,0
+1788733637099,175,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,47539,785,5,5,null,0,4,0
+1788733637100,175,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,47539,785,5,5,http://localhost/products/modern-chair2,173,0,0
+1788733637734,321,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,131303,1787,5,5,null,0,8,0
+1788733637736,135,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65501,769,5,5,http://localhost/checkout,133,0,0
+1788733637877,186,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65802,1018,5,5,http://localhost/checkout,136,0,0
+1788733638048,119,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,36318,774,5,5,null,0,0,0
+1788733638048,119,ThankYou,200,OK,S01_Browse_And_Checkout 1-2,text,true,,36318,774,5,5,http://localhost/thank-you,118,0,0
+1788733638168,240,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,53066,598,5,5,null,0,7,0
+1788733638172,240,OpenApplication,200,OK,S01_Browse_And_Checkout 1-2,text,true,,53066,598,5,5,http://localhost/,189,0,0
+1788733638891,220,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,46996,786,5,5,null,0,2,0
+1788733638891,220,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,46996,786,5,5,http://localhost/products/kitchen-table4,171,0,0
+1788733639527,78,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,612,959,5,5,null,0,0,0
+1788733639527,78,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-3,text,true,,612,959,5,5,http://localhost/wp-admin/admin-ajax.php,78,0,0
+1788733640418,172,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,50851,763,5,5,null,0,1,0
+1788733640418,172,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-2,text,true,,50851,763,5,5,http://localhost/tables,170,0,0
+1788733642122,146,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1081,5,5,null,0,4,0
+1788733642124,146,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,146,0,0
+1788733642834,59,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,612,959,5,5,null,0,1,0
+1788733642835,59,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-4,text,true,,612,959,5,5,http://localhost/wp-admin/admin-ajax.php,59,0,0
+1788733642924,89,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1052,5,5,null,0,3,0
+1788733642925,89,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1052,5,5,http://localhost/wp-admin/admin-ajax.php,89,0,0
+1788733643336,272,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,508,6609,5,5,null,0,3,0
+1788733643338,272,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-3,text,true,,508,6609,5,5,http://localhost/checkout,272,0,0
+1788733644330,257,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46890,786,5,5,null,0,4,0
+1788733644331,257,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46890,786,5,5,http://localhost/products/kitchen-table4,150,0,0
+1788733646545,239,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,53066,598,5,5,null,0,6,0
+1788733646548,239,OpenApplication,200,OK,S01_Browse_And_Checkout 1-5,text,true,,53066,598,5,5,http://localhost/,189,0,0
+1788733647197,231,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,53066,598,5,5,null,0,7,0
+1788733647201,231,OpenApplication,200,OK,S01_Browse_And_Checkout 1-1,text,true,,53066,598,5,5,http://localhost/,182,0,0
+1788733647487,347,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,508,6599,5,5,null,0,5,0
+1788733647491,347,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-4,text,true,,508,6599,5,5,http://localhost/checkout,347,0,0
+1788733648516,125,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,36318,774,5,5,null,0,2,0
+1788733648517,125,ThankYou,200,OK,S01_Browse_And_Checkout 1-3,text,true,,36318,774,5,5,http://localhost/thank-you,123,0,0
+1788733648645,255,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,53066,598,5,5,null,0,9,0
+1788733648649,255,OpenApplication,200,OK,S01_Browse_And_Checkout 1-3,text,true,,53066,598,5,5,http://localhost/,194,0,0
+1788733648791,168,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,50851,763,5,5,null,0,2,0
+1788733648792,168,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-5,text,true,,50851,763,5,5,http://localhost/tables,167,0,0
+1788733649311,81,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1052,5,5,null,0,3,0
+1788733649311,81,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1052,5,5,http://localhost/wp-admin/admin-ajax.php,81,0,0
+1788733649437,167,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,50851,763,5,5,null,0,1,0
+1788733649437,167,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-1,text,true,,50851,763,5,5,http://localhost/tables,166,0,0
+1788733650911,196,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,50851,763,5,5,null,0,2,0
+1788733650912,196,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-3,text,true,,50851,763,5,5,http://localhost/tables,195,0,0
+1788733652194,269,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,47508,790,5,5,null,0,3,3
+1788733652195,269,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,47508,790,5,5,http://localhost/products/living-room-table8,171,0,3
+1788733652630,128,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,36319,774,5,5,null,0,1,2
+1788733652630,128,ThankYou,200,OK,S01_Browse_And_Checkout 1-4,text,true,,36319,774,5,5,http://localhost/thank-you,127,0,2
+1788733652760,223,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,53066,598,5,5,null,0,9,0
+1788733652765,223,OpenApplication,200,OK,S01_Browse_And_Checkout 1-4,text,true,,53066,598,5,5,http://localhost/,177,0,0
+1788733652981,171,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46977,786,5,5,null,0,1,3
+1788733652981,171,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46977,786,5,5,http://localhost/chairs,170,0,3
+1788733654478,182,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,47078,786,5,5,null,0,4,2
+1788733654479,182,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,47078,786,5,5,http://localhost/products/kitchen-table4,175,0,2
+1788733654994,168,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,50851,763,5,5,null,0,2,0
+1788733654995,168,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-4,text,true,,50851,763,5,5,http://localhost/tables,167,0,0
+1788733655991,237,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46714,786,5,5,null,0,4,2
+1788733655992,237,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46714,786,5,5,http://localhost/products/kitchen-table4,186,0,2
+1788733656689,171,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46903,785,5,5,null,0,4,0
+1788733656690,171,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46903,785,5,5,http://localhost/products/modern-chair7,168,0,0
+1788733657084,75,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1056,5,5,null,0,4,0
+1788733657085,75,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1056,5,5,http://localhost/wp-admin/admin-ajax.php,75,0,0
+1788733657915,85,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1052,5,5,null,0,4,0
+1788733657916,85,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1052,5,5,http://localhost/wp-admin/admin-ajax.php,85,0,0
+1788733658383,219,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47490,786,5,5,null,0,4,0
+1788733658384,219,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47490,786,5,5,http://localhost/products/kitchen-table6,169,0,0
+1788733660310,110,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1052,5,5,null,0,5,0
+1788733660310,110,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1052,5,5,http://localhost/wp-admin/admin-ajax.php,110,0,0
+1788733660591,124,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1081,5,5,null,0,2,0
+1788733660591,124,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,124,0,0
+1788733660947,196,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,53066,598,5,5,null,0,7,0
+1788733660950,196,OpenApplication,200,OK,S01_Browse_And_Checkout 1-5,text,true,,53066,598,5,5,http://localhost/,186,0,0
+1788733662792,243,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,46976,786,5,5,null,0,2,0
+1788733662793,243,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-1,text,true,,46976,786,5,5,http://localhost/chairs,242,0,0
+1788733662863,232,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1052,5,5,null,0,3,0
+1788733662864,232,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1052,5,5,http://localhost/wp-admin/admin-ajax.php,232,0,0
+1788733663151,163,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,50851,763,5,5,null,0,9,0
+1788733663151,163,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-5,text,true,,50851,763,5,5,http://localhost/tables,162,0,0
+1788733664220,253,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,53066,598,5,5,null,0,7,0
+1788733664224,253,OpenApplication,200,OK,S01_Browse_And_Checkout 1-3,text,true,,53066,598,5,5,http://localhost/,187,0,0
+1788733665272,155,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,38899,783,5,5,null,0,2,0
+1788733665273,155,OpenCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,38899,783,5,5,http://localhost/cart,154,0,0
+1788733666147,181,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,46976,786,5,5,null,0,2,0
+1788733666148,181,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-4,text,true,,46976,786,5,5,http://localhost/chairs,178,0,0
+1788733666255,168,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,46791,785,5,5,null,0,4,0
+1788733666256,168,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,46791,785,5,5,http://localhost/products/modern-chair6,166,0,0
+1788733666481,173,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,50851,763,5,5,null,0,2,0
+1788733666482,173,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-3,text,true,,50851,763,5,5,http://localhost/tables,172,0,0
+1788733668157,211,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,46653,778,5,5,null,0,3,0
+1788733668158,211,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-5,text,true,,46653,778,5,5,http://localhost/products/table1,162,0,0
+1788733668711,260,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,131589,1786,5,5,null,0,6,0
+1788733668713,137,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-2,text,true,,65794,769,5,5,http://localhost/checkout,135,0,0
+1788733668853,123,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-2,text,true,,65795,1017,5,5,http://localhost/checkout,122,0,0
+1788733669815,175,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,48844,785,5,5,null,0,3,0
+1788733669816,175,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,48844,785,5,5,http://localhost/products/modern-chair1,172,0,0
+1788733670690,162,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1081,5,5,null,0,5,0
+1788733670691,162,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,162,0,0
+1788733671058,309,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46629,778,5,5,null,0,3,0
+1788733671059,309,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46629,778,5,5,http://localhost/products/table1,160,0,0
+1788733672821,69,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,612,959,5,5,null,0,1,0
+1788733672822,69,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-2,text,true,,612,959,5,5,http://localhost/wp-admin/admin-ajax.php,69,0,0
+1788733672875,164,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-5,,true,,778,1043,5,5,null,0,4,0
+1788733672876,164,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-5,text,true,,778,1043,5,5,http://localhost/wp-admin/admin-ajax.php,164,0,0
+1788733674193,111,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1081,5,5,null,0,3,0
+1788733674194,111,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1081,5,5,http://localhost/wp-admin/admin-ajax.php,111,0,0
+1788733674412,109,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1043,5,5,null,0,3,0
+1788733674413,109,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1043,5,5,http://localhost/wp-admin/admin-ajax.php,109,0,0
+1788733675225,195,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,53066,598,5,5,null,0,5,0
+1788733675228,195,OpenApplication,200,OK,S01_Browse_And_Checkout 1-1,text,true,,53066,598,5,5,http://localhost/,186,0,0
+1788733677426,184,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,50851,763,4,4,null,0,2,0
+1788733677427,184,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-1,text,true,,50851,763,4,4,http://localhost/tables,183,0,0
+1788733677690,274,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,508,6647,4,4,null,0,4,0
+1788733677693,274,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-2,text,true,,508,6647,4,4,http://localhost/checkout,274,0,0
+1788733678521,135,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,38899,783,4,4,null,0,3,0
+1788733678523,135,OpenCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,38899,783,4,4,http://localhost/cart,134,0,0
+1788733678687,173,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,46976,778,4,4,null,0,2,0
+1788733678688,173,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-3,text,true,,46976,778,4,4,http://localhost/chairs,173,0,0
+1788733681349,141,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,36318,774,4,4,null,0,2,0
+1788733681350,141,ThankYou,200,OK,S01_Browse_And_Checkout 1-2,text,true,,36318,774,4,4,http://localhost/thank-you,139,0,0
+1788733681493,297,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,53066,598,4,4,null,0,7,0
+1788733681497,297,OpenApplication,200,OK,S01_Browse_And_Checkout 1-2,text,true,,53066,598,4,4,http://localhost/,247,0,0
+1788733682304,270,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,46647,778,4,4,null,0,3,0
+1788733682305,270,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-1,text,true,,46647,778,4,4,http://localhost/products/table1,193,0,0
+1788733682397,270,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,131590,1787,4,4,null,0,6,0
+1788733682400,143,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65795,769,4,4,http://localhost/checkout,141,0,0
+1788733682546,127,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65795,1018,4,4,http://localhost/checkout,126,0,0
+1788733682545,156,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,47399,785,4,4,null,0,3,0
+1788733682545,156,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,47399,785,4,4,http://localhost/products/modern-chair6,155,0,0
+1788733683798,171,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,50851,763,4,4,null,0,2,0
+1788733683799,171,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-2,text,true,,50851,763,4,4,http://localhost/tables,170,0,0
+1788733685936,75,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,612,959,4,4,null,0,2,0
+1788733685938,75,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-4,text,true,,612,959,4,4,http://localhost/wp-admin/admin-ajax.php,75,0,0
+1788733686165,76,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,778,1043,4,4,null,0,5,0
+1788733686166,76,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,778,1043,4,4,http://localhost/wp-admin/admin-ajax.php,76,0,0
+1788733687116,166,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1080,4,4,null,0,2,0
+1788733687116,166,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1080,4,4,http://localhost/wp-admin/admin-ajax.php,166,0,0
+1788733687642,173,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47162,790,4,4,null,0,3,0
+1788733687643,173,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47162,790,4,4,http://localhost/products/living-room-table2,165,0,0
+1788733689084,288,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,508,6532,4,4,null,0,5,0
+1788733689088,288,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-4,text,true,,508,6532,4,4,http://localhost/checkout,288,0,0
+1788733690055,117,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,38259,776,4,4,null,0,2,0
+1788733690056,117,OpenCart,200,OK,S01_Browse_And_Checkout 1-1,text,true,,38259,776,4,4,http://localhost/cart,116,0,0
+1788733690732,242,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,53066,598,4,4,null,0,5,0
+1788733690734,242,OpenApplication,200,OK,S01_Browse_And_Checkout 1-3,text,true,,53066,598,4,4,http://localhost/,191,0,0
+1788733690871,133,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1056,4,4,null,0,4,0
+1788733690872,133,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1056,4,4,http://localhost/wp-admin/admin-ajax.php,133,0,0
+1788733692684,124,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,36318,774,4,4,null,0,1,0
+1788733692685,124,ThankYou,200,OK,S01_Browse_And_Checkout 1-4,text,true,,36318,774,4,4,http://localhost/thank-you,123,0,0
+1788733692811,299,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,53066,598,4,4,null,0,6,0
+1788733692814,299,OpenApplication,200,OK,S01_Browse_And_Checkout 1-4,text,true,,53066,598,4,4,http://localhost/,196,0,0
+1788733692981,180,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,50851,763,4,4,null,0,1,0
+1788733692981,180,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-3,text,true,,50851,763,4,4,http://localhost/tables,179,0,0
+1788733693738,368,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,131257,1785,4,4,null,0,10,0
+1788733693741,159,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-1,text,true,,65477,769,4,4,http://localhost/checkout,158,0,0
+1788733693907,209,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-1,text,true,,65780,1016,4,4,http://localhost/checkout,137,0,0
+1788733694902,169,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46976,790,4,4,null,0,2,0
+1788733694903,169,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46976,790,4,4,http://localhost/chairs,166,0,0
+1788733695117,167,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,50851,763,4,4,null,0,2,0
+1788733695118,167,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-4,text,true,,50851,763,4,4,http://localhost/tables,166,0,0
+1788733696804,266,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,47539,790,4,4,null,0,4,0
+1788733696805,266,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-3,text,true,,47539,790,4,4,http://localhost/products/living-room-table8,153,0,0
+1788733697641,67,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,612,959,4,4,null,0,1,0
+1788733697642,67,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-1,text,true,,612,959,4,4,http://localhost/wp-admin/admin-ajax.php,67,0,0
+1788733698724,167,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47020,786,4,4,null,0,3,0
+1788733698725,167,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47020,786,4,4,http://localhost/products/ancient-chair6,165,0,0
+1788733699686,213,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47337,786,4,4,null,0,4,0
+1788733699687,213,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47337,786,4,4,http://localhost/products/kitchen-table4,162,0,0
+1788733702004,120,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-3,,true,,778,1056,4,4,null,0,4,0
+1788733702005,120,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-3,text,true,,778,1056,4,4,http://localhost/wp-admin/admin-ajax.php,120,0,0
+1788733702648,290,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,508,6544,4,4,null,0,4,0
+1788733702651,290,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-1,text,true,,508,6544,4,4,http://localhost/checkout,290,0,0
+1788733703824,114,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1082,4,4,null,0,4,0
+1788733703825,114,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1082,4,4,http://localhost/wp-admin/admin-ajax.php,114,0,0
+1788733703914,126,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1052,4,4,null,0,3,0
+1788733703914,126,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1052,4,4,http://localhost/wp-admin/admin-ajax.php,126,0,0
+1788733707004,246,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,53066,598,3,3,null,0,8,0
+1788733707009,246,OpenApplication,200,OK,S01_Browse_And_Checkout 1-2,text,true,,53066,598,3,3,http://localhost/,196,0,0
+1788733707551,109,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-1,,true,,36318,774,3,3,null,0,1,0
+1788733707551,109,ThankYou,200,OK,S01_Browse_And_Checkout 1-1,text,true,,36318,774,3,3,http://localhost/thank-you,108,0,0
+1788733708699,182,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,46976,786,2,2,null,0,1,0
+1788733708699,182,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-4,text,true,,46976,786,2,2,http://localhost/chairs,181,0,0
+1788733709259,178,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,50851,763,2,2,null,0,2,0
+1788733709260,178,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-2,text,true,,50851,763,2,2,http://localhost/tables,177,0,0
+1788733712658,218,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47735,790,2,2,null,0,4,0
+1788733712659,218,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47735,790,2,2,http://localhost/products/living-room-table7,166,0,0
+1788733713617,173,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47405,785,2,2,null,0,3,4
+1788733713618,173,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47405,785,2,2,http://localhost/products/modern-chair7,172,0,4
+1788733717463,93,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1081,2,2,null,0,2,0
+1788733717463,93,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1081,2,2,http://localhost/wp-admin/admin-ajax.php,93,0,0
+1788733717782,124,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,779,1056,2,2,null,0,4,3
+1788733717783,124,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,779,1056,2,2,http://localhost/wp-admin/admin-ajax.php,124,0,3
+1788733721141,131,S01_Browse_And_Checkout_T08_OpenCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,38898,783,2,2,null,0,1,0
+1788733721141,131,OpenCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,38898,783,2,2,http://localhost/cart,131,0,0
+1788733721433,237,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,53066,598,2,2,null,0,7,0
+1788733721436,237,OpenApplication,200,OK,S01_Browse_And_Checkout 1-2,text,true,,53066,598,2,2,http://localhost/,187,0,0
+1788733723678,190,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,50851,763,2,2,null,0,1,0
+1788733723678,190,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-2,text,true,,50851,763,2,2,http://localhost/tables,189,0,0
+1788733725686,274,S01_Browse_And_Checkout_T09_OpenCheckout,200,"Number of samples in transaction : 2, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,131590,1787,2,2,null,0,7,0
+1788733725688,145,OpenCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65795,769,2,2,http://localhost/checkout,141,0,0
+1788733725838,129,ProceedToCheckout,200,OK,S01_Browse_And_Checkout 1-4,text,true,,65795,1018,2,2,http://localhost/checkout,127,0,0
+1788733726958,231,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46933,786,2,2,null,0,3,0
+1788733726959,231,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46933,786,2,2,http://localhost/products/kitchen-table4,159,0,0
+1788733730071,67,S01_Browse_And_Checkout_T10_FillCheckoutFields,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,612,959,2,2,null,0,1,0
+1788733730071,67,FillCheckoutFields,200,OK,S01_Browse_And_Checkout 1-4,text,true,,612,959,2,2,http://localhost/wp-admin/admin-ajax.php,67,0,0
+1788733731441,163,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1052,2,2,null,0,4,0
+1788733731442,163,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1052,2,2,http://localhost/wp-admin/admin-ajax.php,163,0,0
+1788733734504,307,S01_Browse_And_Checkout_T11_SubmitOrder,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,508,6601,2,2,null,0,4,0
+1788733734507,307,SubmitOrder,302,Found,S01_Browse_And_Checkout 1-4,text,true,,508,6601,2,2,http://localhost/checkout,307,0,0
+1788733736301,176,S01_Browse_And_Checkout_T05_NavigateToChairs,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,46976,786,2,2,null,0,2,0
+1788733736302,176,NavigateToChairs,200,OK,S01_Browse_And_Checkout 1-2,text,true,,46976,786,2,2,http://localhost/chairs,175,0,0
+1788733739113,135,S01_Browse_And_Checkout_T12_ThankYou,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,36318,774,2,2,null,0,1,0
+1788733739114,135,ThankYou,200,OK,S01_Browse_And_Checkout 1-4,text,true,,36318,774,2,2,http://localhost/thank-you,135,0,0
+1788733739250,287,S01_Browse_And_Checkout_T01_OpenApplication,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,53066,598,2,2,null,0,8,0
+1788733739255,287,OpenApplication,200,OK,S01_Browse_And_Checkout 1-4,text,true,,53066,598,2,2,http://localhost/,188,0,0
+1788733740334,150,S01_Browse_And_Checkout_T06_OpenChairProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,47106,785,2,2,null,0,3,0
+1788733740335,150,OpenChairProductCard,200,OK,S01_Browse_And_Checkout 1-2,text,true,,47106,785,2,2,http://localhost/products/modern-chair5,147,0,0
+1788733741546,166,S01_Browse_And_Checkout_T02_NavigateToTables,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,50851,763,2,2,null,0,1,0
+1788733741546,166,NavigateToTables,200,OK,S01_Browse_And_Checkout 1-4,text,true,,50851,763,2,2,http://localhost/tables,162,0,0
+1788733744141,127,S01_Browse_And_Checkout_T07_AddChairToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-2,,true,,778,1081,2,2,null,0,2,0
+1788733744141,127,AddChairToCart,200,OK,S01_Browse_And_Checkout 1-2,text,true,,778,1081,2,2,http://localhost/wp-admin/admin-ajax.php,127,0,0
+1788733745785,234,S01_Browse_And_Checkout_T03_OpenTableProductCard,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,47850,786,2,2,null,0,5,0
+1788733745786,234,OpenTableProductCard,200,OK,S01_Browse_And_Checkout 1-4,text,true,,47850,786,2,2,http://localhost/products/kitchen-table6,163,0,0
+1788733749851,123,S01_Browse_And_Checkout_T04_AddTableToCart,200,"Number of samples in transaction : 1, number of failing samples : 0",S01_Browse_And_Checkout 1-4,,true,,778,1052,1,1,null,0,4,0
+1788733749852,123,AddTableToCart,200,OK,S01_Browse_And_Checkout 1-4,text,true,,778,1052,1,1,http://localhost/wp-admin/admin-ajax.php,123,0,0

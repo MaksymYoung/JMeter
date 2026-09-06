@@ -1,0 +1,14 @@
+Label,# Samples,Average,Median,90% Line,95% Line,99% Line,Min,Max,Error %,Throughput,Received KB/sec,Sent KB/sec
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T01_OpenApplication,25,216,215,232,277,284,177,284,0.000%,.20237,10.49,0.12
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T02_NavigateToTables,25,164,161,184,197,211,147,211,0.000%,.20271,10.07,0.15
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T03_OpenTableProductCard,25,185,189,214,219,228,145,228,0.000%,.20030,9.23,0.15
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T04_AddTableToCart,25,99,108,122,123,123,62,123,0.000%,.20099,0.15,0.21
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T05_NavigateToChairs,12,164,159,181,181,205,149,205,0.000%,.10492,4.81,0.08
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T06_OpenChairProductCard,12,148,148,154,154,165,140,165,0.000%,.10538,4.87,0.08
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T07_AddChairToCart,12,100,108,123,123,148,67,148,0.000%,.10454,0.08,0.11
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T08_OpenCart,7,127,117,142,179,179,105,179,0.000%,.07200,2.72,0.06
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T09_OpenCheckout,7,257,247,291,303,303,220,303,0.000%,.07094,9.11,0.12
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T10_FillCheckoutFields,7,63,66,67,69,69,54,69,0.000%,.07156,0.04,0.07
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T11_SubmitOrder,7,243,249,262,266,266,208,266,0.000%,.07281,0.04,0.47
+S01_Browse_And_Checkout:S01_Browse_And_Checkout_T12_ThankYou,7,116,118,123,140,140,101,140,0.000%,.07226,2.56,0.05
+TOTAL,171,159,158,228,249,284,54,303,0.000%,1.23404,45.04,1.33

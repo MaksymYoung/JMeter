@@ -1,0 +1,57 @@
+---
+title: 'LOAD MODEL — "Performance Testing Essentials"'
+---
+flowchart TD
+
+    Root["<b>🏠 01. Open Application</b><br/>GET / — document"]
+
+    T1["<b>📂 02. Navigate to Tables Tab</b><br/>GET /tables — document"]
+
+    T2["<b>🪑 03. Open Table Product Card</b><br/>GET /products/{TABLE_SLUG}/ — document<br/><i>TABLE_SLUG = random (e.g. living-room-table8)</i>"]
+
+    T3["<b>🛒 04. Add Table to Cart</b><br/>POST /wp-admin/admin-ajax.php — XHR<br/>action=ic_add_to_cart<br/>current_product={TABLE_ID}<br/>quantity=1"]
+
+    C1["<b>📂 05. Navigate to Chairs Tab</b><br/>GET /chairs — document"]
+
+    C2["<b>🪑 06. Open Chair Product Card</b><br/>GET /products/{CHAIR_SLUG}/ — document<br/><i>CHAIR_SLUG = random (e.g. modern-chair8)</i>"]
+
+    C3["<b>🛒 07. Add Chair to Cart</b><br/>POST /wp-admin/admin-ajax.php — XHR<br/>action=ic_add_to_cart<br/>current_product={CHAIR_ID}<br/>cart_content={TABLE_ID:1}<br/>quantity=1"]
+
+    M1(("Merge"))
+
+    K1["<b>🛍️ 08. Open Cart</b><br/>GET /cart/ — document"]
+
+    K2["<b>💳 09. Open Checkout</b><br/>GET /checkout/ — document"]
+
+    K3["<b>📝 10. Fill Required Checkout Fields</b><br/>Billing + required fields<br/>Country selection may trigger<br/>1–2 XHR requests"]
+
+    K4["<b>✅ 11. Submit Order</b><br/>POST /checkout/<br/>HTTP 302 Redirect"]
+
+    K5["<b>🎉 12. Thank You</b><br/>GET /thank-you/ — document"]
+
+    Root -->|"100%"| T1
+    T1 --> T2
+    T2 --> T3
+
+    T3 -->|"50% — add chair"| C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> M1
+
+    T3 -->|"50% — skip chair"| M1
+
+    M1 -->|"30% of ALL users"| K1
+    K1 --> K2
+    K2 --> K3
+    K3 --> K4
+    K4 --> K5
+
+    classDef page fill:#7dd3d8,stroke:#0e7490,stroke-width:1.5px,color:#00303a,text-align:left,rx:8,ry:8;
+    classDef api fill:#fcd34d,stroke:#b45309,stroke-width:1.5px,color:#3b2400,text-align:left,rx:8,ry:8;
+    classDef final fill:#86efac,stroke:#15803d,stroke-width:1.5px,color:#022c0a,text-align:left,rx:8,ry:8;
+    classDef junction fill:#94a3b8,stroke:#475569,stroke-width:1px;
+
+    class Root,T1,T2,C1,C2,K1,K2,K4 page;
+    class T3,C3,K3 api;
+    class K5 final;
+    class M1 junction;
