@@ -1,495 +1,495 @@
-curl --url ^"http://localhost/checkout^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -H ^"Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryx1cAiKnkvicYISNc^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Origin: http://localhost^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/checkout^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"Sec-Fetch-User: ?1^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" ^
-  --data-raw ^"------WebKitFormBoundaryx1cAiKnkvicYISNc^
+curl --url "http://localhost/checkout" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryx1cAiKnkvicYISNc" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Origin: http://localhost" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/checkout" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "Sec-Fetch-User: ?1" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="ic_formbuilder_redirect"^
+Content-Disposition: form-data; name="ic_formbuilder_redirect"
 
-^
 
-http://localhost/thank-you^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+http://localhost/thank-you
 
-Content-Disposition: form-data; name="cart_content"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_content"
 
-^{"121__":1,"91__":1^}^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="product_price_121__"^
+{"121__":1,"91__":1}
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-420.00^
+Content-Disposition: form-data; name="product_price_121__"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="product_price_91__"^
 
-^
+420.00
 
-164.00^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="product_price_91__"
 
-Content-Disposition: form-data; name="total_net"^
 
-^
 
-584.00^
+164.00
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="trans_id"^
+Content-Disposition: form-data; name="total_net"
 
-^
 
-17886533754077^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+584.00
 
-Content-Disposition: form-data; name="shipping"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="trans_id"
 
-order^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_content"^
+17886533754077
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^{"121__":1,"91__":1^}^
+Content-Disposition: form-data; name="shipping"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_type"^
 
-^
+order
 
-order^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_content"
 
-Content-Disposition: form-data; name="cart_inside_header_1"^
 
-^
 
-^<b^>BILLING ADDRESS^</b^>^
+{"121__":1,"91__":1}
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="cart_company"^
+Content-Disposition: form-data; name="cart_type"
 
-^
 
-cfdsvfvf^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+order
 
-Content-Disposition: form-data; name="cart_name"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_inside_header_1"
 
-vfvfgbgfbfg^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_address"^
+<b>BILLING ADDRESS</b>
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-bgbgsnbhnt^
+Content-Disposition: form-data; name="cart_company"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_postal"^
 
-^
+cfdsvfvf
 
-94645984945^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_name"
 
-Content-Disposition: form-data; name="cart_city"^
 
-^
 
-vfdbvgsbgrf^
+vfvfgbgfbfg
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="cart_country"^
+Content-Disposition: form-data; name="cart_address"
 
-^
 
-AZ^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+bgbgsnbhnt
 
-Content-Disposition: form-data; name="cart_state"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_postal"
 
-^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_phone"^
+94645984945
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-645652645985456^
+Content-Disposition: form-data; name="cart_city"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_email"^
 
-^
+vfdbvgsbgrf
 
-vfevbefvbf^@email.com^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_country"
 
-Content-Disposition: form-data; name="cart_comment"^
 
-^
 
-^
+AZ
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="cart_inside_header_2"^
+Content-Disposition: form-data; name="cart_state"
 
-^
 
-^<b^>DELIVERY ADDRESS^</b^> (FILL ONLY IF DIFFERENT FROM THE BILLING ADDRESS)^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_company"^
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_phone"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_name"^
 
-^
+645652645985456
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_email"
 
-Content-Disposition: form-data; name="cart_s_address"^
 
-^
 
-^
+vfevbefvbf@email.com
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-Content-Disposition: form-data; name="cart_s_postal"^
+Content-Disposition: form-data; name="cart_comment"
 
-^
 
-^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_city"^
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_inside_header_2"
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_country"^
 
-^
+<b>DELIVERY ADDRESS</b> (FILL ONLY IF DIFFERENT FROM THE BILLING ADDRESS)
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_s_company"
 
-Content-Disposition: form-data; name="cart_s_state"^
 
-^
 
-^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_phone"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_s_name"
 
-^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_s_email"^
 
-^
 
-^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
+Content-Disposition: form-data; name="cart_s_address"
 
-Content-Disposition: form-data; name="cart_s_comment"^
 
-^
 
-^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc^
 
-Content-Disposition: form-data; name="cart_submit"^
+------WebKitFormBoundaryx1cAiKnkvicYISNc
 
-^
+Content-Disposition: form-data; name="cart_s_postal"
 
-Place Order^
 
-------WebKitFormBoundaryx1cAiKnkvicYISNc--^
 
-^" &
-curl --url ^"http://localhost/thank-you^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/checkout^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"Sec-Fetch-User: ?1^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/checkout^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -H ^"Content-Type: application/x-www-form-urlencoded^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Origin: http://localhost^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/cart^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"Sec-Fetch-User: ?1^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" ^
-  --data-raw ^"cart_content=^%^7B^%^22121__^%^22^%^3A1^%^2C^%^2291__^%^22^%^3A1^%^7D^&p_id^%^5B^%^5D=121__^&p_quantity^%^5B^%^5D=1^&p_id^%^5B^%^5D=91__^&p_quantity^%^5B^%^5D=1^&total_net=584.00^&trans_id=17886533732055^&shipping=order^" &
-curl --url ^"http://localhost/cart^" ^
-  -H ^"Referer: http://localhost/products/modern-chair8^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/products/modern-chair8^" ^
-  -H ^"Referer: http://localhost/chairs^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/chairs^" ^
-  -H ^"Referer: http://localhost/products/living-room-table8^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/products/living-room-table8^" ^
-  -H ^"Referer: http://localhost/tables^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/tables^" ^
-  -H ^"Referer: http://localhost/^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/^" ^
-  -H ^"Referer: http://localhost/thank-you^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/tables^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Referer: http://localhost/^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: none^" ^
-  -H ^"Sec-Purpose: prefetch^" ^
-  -H ^"Sec-Speculation-Tags: null^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/products/living-room-table8^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Referer: http://localhost/tables^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: none^" ^
-  -H ^"Sec-Purpose: prefetch^" ^
-  -H ^"Sec-Speculation-Tags: null^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/wp-admin/admin-ajax.php^" ^
-  -H ^"Accept: */*^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -H ^"Content-Type: application/x-www-form-urlencoded; charset=UTF-8^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Origin: http://localhost^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/products/living-room-table8^" ^
-  -H ^"Sec-Fetch-Dest: empty^" ^
-  -H ^"Sec-Fetch-Mode: cors^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"X-Requested-With: XMLHttpRequest^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" ^
-  --data-raw ^"action=ic_add_to_cart^&add_cart_data=current_product^%^3D121^%^26cart_content^%^3D^%^26current_quantity^%^3D1^&cart_widget=0^&cart_container=0^" &
-curl --url ^"http://localhost/chairs^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Referer: http://localhost/products/living-room-table8^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: none^" ^
-  -H ^"Sec-Purpose: prefetch^" ^
-  -H ^"Sec-Speculation-Tags: null^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/products/modern-chair8^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Referer: http://localhost/chairs^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: none^" ^
-  -H ^"Sec-Purpose: prefetch^" ^
-  -H ^"Sec-Speculation-Tags: null^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/wp-admin/admin-ajax.php^" ^
-  -H ^"Accept: */*^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -H ^"Content-Type: application/x-www-form-urlencoded; charset=UTF-8^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Origin: http://localhost^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/products/modern-chair8^" ^
-  -H ^"Sec-Fetch-Dest: empty^" ^
-  -H ^"Sec-Fetch-Mode: cors^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"X-Requested-With: XMLHttpRequest^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" ^
-  --data-raw ^"action=ic_add_to_cart^&add_cart_data=current_product^%^3D91^%^26cart_content^%^3D^%^257B^%^2522121__^%^2522^%^253A1^%^257D^%^26current_quantity^%^3D1^&cart_widget=0^&cart_container=0^" &
-curl --url ^"http://localhost/cart^" ^
-  -H ^"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Connection: keep-alive^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Referer: http://localhost/products/modern-chair8^" ^
-  -H ^"Sec-Fetch-Dest: document^" ^
-  -H ^"Sec-Fetch-Mode: navigate^" ^
-  -H ^"Sec-Fetch-Site: none^" ^
-  -H ^"Sec-Purpose: prefetch^" ^
-  -H ^"Sec-Speculation-Tags: null^" ^
-  -H ^"Upgrade-Insecure-Requests: 1^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" &
-curl --url ^"http://localhost/wp-admin/admin-ajax.php^" ^
-  -H ^"Accept: */*^" ^
-  -H ^"Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7^" ^
-  -H ^"Cache-Control: no-cache^" ^
-  -H ^"Connection: keep-alive^" ^
-  -H ^"Content-Type: application/x-www-form-urlencoded; charset=UTF-8^" ^
-  -b ^"wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917^%^7C^%^7C1788904663^%^7C^%^7C1788901063^%^7C^%^7C2665f7872f5d14b82c39f34dfc7d1ce5^" ^
-  -H ^"Origin: http://localhost^" ^
-  -H ^"Pragma: no-cache^" ^
-  -H ^"Referer: http://localhost/checkout^" ^
-  -H ^"Sec-Fetch-Dest: empty^" ^
-  -H ^"Sec-Fetch-Mode: cors^" ^
-  -H ^"Sec-Fetch-Site: same-origin^" ^
-  -H ^"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36^" ^
-  -H ^"X-Requested-With: XMLHttpRequest^" ^
-  -H ^"sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"^" ^
-  -H ^"sec-ch-ua-mobile: ?0^" ^
-  -H ^"sec-ch-ua-platform: "Windows"^" ^
-  --data-raw ^"action=ic_state_dropdown^&country_code=AZ^&state_code=^"
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_city"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_country"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_state"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_phone"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_email"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_s_comment"
+
+
+
+
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc
+
+Content-Disposition: form-data; name="cart_submit"
+
+
+
+Place Order
+
+------WebKitFormBoundaryx1cAiKnkvicYISNc--
+
+" &
+curl --url "http://localhost/thank-you" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/checkout" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "Sec-Fetch-User: ?1" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/checkout" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: application/x-www-form-urlencoded" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Origin: http://localhost" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/cart" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "Sec-Fetch-User: ?1" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "cart_content=%7B%22121__%22%3A1%2C%2291__%22%3A1%7D&p_id%5B%5D=121__&p_quantity%5B%5D=1&p_id%5B%5D=91__&p_quantity%5B%5D=1&total_net=584.00&trans_id=17886533732055&shipping=order" &
+curl --url "http://localhost/cart" 
+  -H "Referer: http://localhost/products/modern-chair8" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/products/modern-chair8" 
+  -H "Referer: http://localhost/chairs" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/chairs" 
+  -H "Referer: http://localhost/products/living-room-table8" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/products/living-room-table8" 
+  -H "Referer: http://localhost/tables" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/tables" 
+  -H "Referer: http://localhost/" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/" 
+  -H "Referer: http://localhost/thank-you" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/tables" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Referer: http://localhost/" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: none" 
+  -H "Sec-Purpose: prefetch" 
+  -H "Sec-Speculation-Tags: null" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/products/living-room-table8" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Referer: http://localhost/tables" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: none" 
+  -H "Sec-Purpose: prefetch" 
+  -H "Sec-Speculation-Tags: null" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/wp-admin/admin-ajax.php" 
+  -H "Accept: */*" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Origin: http://localhost" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/products/living-room-table8" 
+  -H "Sec-Fetch-Dest: empty" 
+  -H "Sec-Fetch-Mode: cors" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "X-Requested-With: XMLHttpRequest" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "action=ic_add_to_cart&add_cart_data=current_product%3D121%26cart_content%3D%26current_quantity%3D1&cart_widget=0&cart_container=0" &
+curl --url "http://localhost/chairs" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Referer: http://localhost/products/living-room-table8" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: none" 
+  -H "Sec-Purpose: prefetch" 
+  -H "Sec-Speculation-Tags: null" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/products/modern-chair8" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Referer: http://localhost/chairs" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: none" 
+  -H "Sec-Purpose: prefetch" 
+  -H "Sec-Speculation-Tags: null" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/wp-admin/admin-ajax.php" 
+  -H "Accept: */*" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Origin: http://localhost" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/products/modern-chair8" 
+  -H "Sec-Fetch-Dest: empty" 
+  -H "Sec-Fetch-Mode: cors" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "X-Requested-With: XMLHttpRequest" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "action=ic_add_to_cart&add_cart_data=current_product%3D91%26cart_content%3D%257B%2522121__%2522%253A1%257D%26current_quantity%3D1&cart_widget=0&cart_container=0" &
+curl --url "http://localhost/cart" 
+  -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Connection: keep-alive" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Referer: http://localhost/products/modern-chair8" 
+  -H "Sec-Fetch-Dest: document" 
+  -H "Sec-Fetch-Mode: navigate" 
+  -H "Sec-Fetch-Site: none" 
+  -H "Sec-Purpose: prefetch" 
+  -H "Sec-Speculation-Tags: null" 
+  -H "Upgrade-Insecure-Requests: 1" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" &
+curl --url "http://localhost/wp-admin/admin-ajax.php" 
+  -H "Accept: */*" 
+  -H "Accept-Language: en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7" 
+  -H "Cache-Control: no-cache" 
+  -H "Connection: keep-alive" 
+  -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8" 
+  -b "wp_ic_session_86a9106ae65537651a8e456835b316ab=ic_61827a6871540bd9eaf501bc40917%7C%7C1788904663%7C%7C1788901063%7C%7C2665f7872f5d14b82c39f34dfc7d1ce5" 
+  -H "Origin: http://localhost" 
+  -H "Pragma: no-cache" 
+  -H "Referer: http://localhost/checkout" 
+  -H "Sec-Fetch-Dest: empty" 
+  -H "Sec-Fetch-Mode: cors" 
+  -H "Sec-Fetch-Site: same-origin" 
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" 
+  -H "X-Requested-With: XMLHttpRequest" 
+  -H "sec-ch-ua: "Chromium";v="152", "Not?A_Brand";v="24", "Google Chrome";v="152"" 
+  -H "sec-ch-ua-mobile: ?0" 
+  -H "sec-ch-ua-platform: "Windows"" 
+  --data-raw "action=ic_state_dropdown&country_code=AZ&state_code="
   
