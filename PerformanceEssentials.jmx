@@ -6,9 +6,11 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="ViewResultsTree">
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="ViewResultsTree" enabled="false">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -83,7 +85,7 @@
         <boolProp name="useGroupName">true</boolProp>
       </ResultCollector>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
           <elementProp name="base_url" elementType="Argument">
             <stringProp name="Argument.name">base_url</stringProp>
@@ -158,7 +160,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <stringProp name="HTTPSampler.connect_timeout">${connect_timeout}</stringProp>
         <stringProp name="HTTPSampler.response_timeout">${response_timeout}</stringProp>
         <stringProp name="HTTPSampler.domain">${app}</stringProp>
@@ -171,7 +173,7 @@
         <stringProp name="HTTPSampler.implementation"></stringProp>
       </ConfigTestElement>
       <hashTree/>
-      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager - Global Defaults">
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager - Global Defaults" enabled="true">
         <collectionProp name="HeaderManager.headers">
           <elementProp name="User-Agent" elementType="Header">
             <stringProp name="Header.name">User-Agent</stringProp>
@@ -212,20 +214,20 @@
         </collectionProp>
       </HeaderManager>
       <hashTree/>
-      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager">
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         <stringProp name="CookieManager.policy">default</stringProp>
       </CookieManager>
       <hashTree/>
-      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">false</boolProp>
         <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - Checkout">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - Checkout" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="filename">${__groovy(org.apache.jmeter.services.FileServer.getFileServer().getBaseDir() + java.io.File.separator + &apos;csv&apos; + java.io.File.separator + &apos;checkout.csv&apos;)}</stringProp>
@@ -237,11 +239,11 @@
         <stringProp name="variableNames">cart_name,cart_address,cart_postal,cart_city,cart_country,cart_phone,cart_email</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="TF - Reusable Modules"/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="TF - Reusable Modules" enabled="true"/>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - OpenCart"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - OpenCart" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenCart">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenCart" enabled="true">
             <stringProp name="HTTPSampler.path">cart</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -252,7 +254,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
@@ -261,27 +263,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Cart Content">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">cart_content_json</stringProp>
-              <stringProp name="RegexExtractor.regex">name=&quot;cart_content&quot; value=&quot;(.+?)&quot;</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">cart_content_json_NOT_FOUND</stringProp>
-              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Total Net">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">total_net_cart</stringProp>
-              <stringProp name="RegexExtractor.regex">name=&quot;total_net&quot; value=&quot;([\d.]+)&quot;</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">total_net_cart_NOT_FOUND</stringProp>
-              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Cart Page Opened">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Cart Page Opened" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-87092968">&lt;title&gt;Cart &amp;#8211; Performance testing Essentials&lt;/title&gt;</stringProp>
               </collectionProp>
@@ -293,9 +275,9 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - OpenCheckout"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - OpenCheckout" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenCheckout">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenCheckout" enabled="true">
             <stringProp name="HTTPSampler.path">checkout</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -306,7 +288,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Referer" elementType="Header">
                   <stringProp name="Header.name">Referer</stringProp>
@@ -315,7 +297,7 @@
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Trans ID">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Trans ID" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">trans_id</stringProp>
               <stringProp name="RegexExtractor.regex">value=&quot;(\d+)&quot; name=&quot;trans_id&quot;</stringProp>
@@ -325,7 +307,37 @@
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Checkout Page Opened">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Checkout Cart Content" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">cart_content</stringProp>
+              <stringProp name="RegexExtractor.regex">name=&quot;cart_content&quot; value=&quot;(.+?)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">{}</stringProp>
+              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Checkout Total Net" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">total_net</stringProp>
+              <stringProp name="RegexExtractor.regex">name=&quot;total_net&quot; value=&quot;([\d.]+)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">0.00</stringProp>
+              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Product Price Fields" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">product_price</stringProp>
+              <stringProp name="RegexExtractor.regex">name=&quot;(product_price_\d+__)&quot; value=&quot;([^&quot;]+)&quot;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$=$2$</stringProp>
+              <stringProp name="RegexExtractor.default"></stringProp>
+              <boolProp name="RegexExtractor.default_empty_value">true</boolProp>
+              <stringProp name="RegexExtractor.match_number">-1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Checkout Page Opened" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-1886525681">BILLING ADDRESS</stringProp>
               </collectionProp>
@@ -338,7 +350,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="S01_Browse_And_Checkout">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="S01_Browse_And_Checkout" enabled="true">
         <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${rampup}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -349,12 +361,12 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T01_OpenApplication">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T01_OpenApplication" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenApplication">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenApplication" enabled="true">
             <stringProp name="HTTPSampler.path">/</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -365,17 +377,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 - Reset Optional Chair Data">
-              <stringProp name="scriptLanguage">groovy</stringProp>
-              <stringProp name="parameters"></stringProp>
-              <stringProp name="filename"></stringProp>
-              <stringProp name="script">vars.remove(&apos;chair_id&apos;)
-vars.remove(&apos;chair_slug&apos;)
-vars.remove(&apos;chair_price&apos;)</stringProp>
-              <stringProp name="cacheKey">true</stringProp>
-            </JSR223PreProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Home Page">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Home Page" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-1489014560">&lt;title&gt;Performance testing Essentials&lt;/title&gt;</stringProp>
               </collectionProp>
@@ -393,17 +395,17 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
         </TestAction>
         <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer">
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">${think_time}</stringProp>
           </ConstantTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T02_NavigateToTables">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T02_NavigateToTables" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NavigateToTables">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NavigateToTables" enabled="true">
             <stringProp name="HTTPSampler.path">tables</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -414,7 +416,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Product Link">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Product Link" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">table_slug</stringProp>
               <stringProp name="RegexExtractor.regex">/products/([a-z0-9\-]+)</stringProp>
@@ -424,7 +426,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               <stringProp name="RegexExtractor.match_number">0</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Tables Page">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Tables Page" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="-493590605">&lt;title&gt;Tables &amp;#8211; Performance testing Essentials&lt;/title&gt;</stringProp>
               </collectionProp>
@@ -442,7 +444,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
         </TestAction>
         <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
             <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
             <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
           </UniformRandomTimer>
@@ -453,7 +455,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenTableProductCard">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OpenTableProductCard" enabled="true">
             <stringProp name="HTTPSampler.path">products/${table_slug}</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -473,7 +475,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Product ID">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Product ID" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">table_id</stringProp>
               <stringProp name="RegexExtractor.regex">name=&quot;current_product&quot; value=&quot;(\d+)&quot;</stringProp>
@@ -483,7 +485,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Price">
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Price" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">table_price</stringProp>
               <stringProp name="RegexExtractor.regex">price-value-\d+[^&gt;]*&gt;\s*\$?([\d.]+)</stringProp>
@@ -493,7 +495,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
             <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Table Product Page">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Table Product Page" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="2061420649">name=&quot;current_product&quot;</stringProp>
               </collectionProp>
@@ -511,18 +513,18 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
         </TestAction>
         <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
             <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
             <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T04_AddTableToCart">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T04_AddTableToCart" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AddTableToCart">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AddTableToCart" enabled="true">
             <stringProp name="HTTPSampler.path">wp-admin/admin-ajax.php</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -539,7 +541,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
@@ -556,24 +558,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
-            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Add To Cart Success">
-              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-              <stringProp name="RegexExtractor.refname">addToCartResult</stringProp>
-              <stringProp name="RegexExtractor.regex">&quot;success&quot;\s*:\s*(true|false)</stringProp>
-              <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">addToCartResult_NOT_FOUND</stringProp>
-              <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-              <stringProp name="RegexExtractor.match_number">1</stringProp>
-            </RegexExtractor>
-            <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Extract success">
-              <stringProp name="JSONPostProcessor.referenceNames">addToCartSuccess;addToCartContent</stringProp>
-              <stringProp name="JSONPostProcessor.jsonPathExprs">$.success;$.cart_content</stringProp>
-              <stringProp name="JSONPostProcessor.match_numbers">1;1</stringProp>
-              <stringProp name="JSONPostProcessor.defaultValues">addToCartSuccess_NOT_FOUND;addToCartContent_NOT_FOUND</stringProp>
-            </JSONPostProcessor>
-            <hashTree/>
-            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Add Table Success">
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Add Table Success" enabled="true">
               <collectionProp name="Asserion.test_strings">
                 <stringProp name="704690708">al-box success cart-added-info</stringProp>
               </collectionProp>
@@ -591,7 +576,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           <stringProp name="ActionProcessor.duration">0</stringProp>
         </TestAction>
         <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
             <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
             <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
           </UniformRandomTimer>
@@ -608,12 +593,12 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T05_NavigateToChairs">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T05_NavigateToChairs" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NavigateToChairs">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="NavigateToChairs" enabled="true">
               <stringProp name="HTTPSampler.path">chairs</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -624,7 +609,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
@@ -633,7 +618,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Chair Product Link">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Chair Product Link" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">chair_slug</stringProp>
                 <stringProp name="RegexExtractor.regex">/products/([a-z0-9\-]+)</stringProp>
@@ -643,7 +628,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
               </RegexExtractor>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Chairs Page">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Chairs Page" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="-1542481750">&lt;title&gt;Chairs &amp;#8211; Performance testing Essentials&lt;/title&gt;</stringProp>
                 </collectionProp>
@@ -667,7 +652,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T06_OpenChairProductCard">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T06_OpenChairProductCard" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -852,55 +837,6 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               </collectionProp>
             </ModuleController>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ProceedToCheckout" enabled="true">
-              <stringProp name="HTTPSampler.path">checkout</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
-              <stringProp name="HTTPSampler.method">POST</stringProp>
-              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
-              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
-                <collectionProp name="Arguments.arguments">
-                  <elementProp name="" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">${cart_update_body}</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </elementProp>
-            </HTTPSamplerProxy>
-            <hashTree>
-              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 - Build Cart Data" enabled="true">
-                <stringProp name="scriptLanguage">groovy</stringProp>
-                <stringProp name="parameters"></stringProp>
-                <stringProp name="filename">${__groovy(org.apache.jmeter.services.FileServer.getFileServer().getBaseDir() + java.io.File.separator + &apos;scripts&apos; + java.io.File.separator + &apos;build-cart-data.groovy&apos;)}</stringProp>
-                <stringProp name="script"></stringProp>
-                <stringProp name="cacheKey">true</stringProp>
-              </JSR223PreProcessor>
-              <hashTree/>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
-                <collectionProp name="HeaderManager.headers">
-                  <elementProp name="Content-Type" elementType="Header">
-                    <stringProp name="Header.name">Content-Type</stringProp>
-                    <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
-                  </elementProp>
-                  <elementProp name="Referer" elementType="Header">
-                    <stringProp name="Header.name">Referer</stringProp>
-                    <stringProp name="Header.value">${base_url}/cart</stringProp>
-                  </elementProp>
-                </collectionProp>
-              </HeaderManager>
-              <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Checkout Loaded" enabled="true">
-                <collectionProp name="Asserion.test_strings">
-                  <stringProp name="-1886525681">BILLING ADDRESS</stringProp>
-                </collectionProp>
-                <stringProp name="Assertion.custom_message">Checkout page did not load after cart update</stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
-                <boolProp name="Assertion.assume_success">false</boolProp>
-                <intProp name="Assertion.test_type">16</intProp>
-              </ResponseAssertion>
-              <hashTree/>
-            </hashTree>
           </hashTree>
           <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
@@ -919,7 +855,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="FillCheckoutFields" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="LoadStateDropdown" enabled="true">
               <stringProp name="HTTPSampler.path">wp-admin/admin-ajax.php</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -982,7 +918,7 @@ vars.remove(&apos;chair_price&apos;)</stringProp>
               <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Random state_code" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">state_code</stringProp>
-                <stringProp name="RegexExtractor.regex">&quot;value&quot;:&quot;([A-Z0-9_]+)&quot;</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;value&quot;:&quot;([A-Z_]+)&quot;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
                 <stringProp name="RegexExtractor.default"></stringProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
