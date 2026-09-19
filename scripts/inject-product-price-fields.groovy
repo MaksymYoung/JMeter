@@ -24,4 +24,3 @@ if (ck != null && cp != null && !ck.contains("NOT_FOUND")) {
   HTTPArgument a2 = new HTTPArgument("product_price_" + ck, cp);
   a2.setAlwaysEncoded(false); a2.setUseEquals(true); args.addArgument(a2);
 }
-log.info("place-order args count=" + args.getArgumentCount());

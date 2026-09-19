@@ -5,7 +5,8 @@
 // Builds the cart JSON.
 // Builds the Request body for the next POST request.
 String tableKey = vars.get("table_id") + "__";
-boolean addChairNow = "true".equals(vars.get("hasChair"));
+String chairId = vars.get("chair_id");
+boolean addChairNow = chairId != null && !chairId.contains("NOT_FOUND");
 String chairKey = vars.get("chair_id") + "__";
 double total = 0.0;
 try { total = Double.parseDouble(vars.get("table_price")); } catch (Exception ignored) {}
@@ -30,6 +31,3 @@ body.append("&total_net=").append(java.net.URLEncoder.encode(totalNet, "UTF-8"))
 body.append("&trans_id=").append(java.net.URLEncoder.encode(vars.get("trans_id"), "UTF-8"));
 body.append("&shipping=order");
 vars.put("cart_update_body", body.toString());
-// reset chair marker for next iteration
-vars.remove("hasChair");
-log.info("cart_content=" + cartContent + " total_net=" + totalNet);
