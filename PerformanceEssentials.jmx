@@ -137,8 +137,8 @@
             <stringProp name="Argument.value">${__jexl3((${__P(tt_min,1000)} + ${__P(tt_max,5000)}) / 2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="think_time_spread" elementType="Argument">
-            <stringProp name="Argument.name">think_time_spread</stringProp>
+          <elementProp name="think_time_deviation" elementType="Argument">
+            <stringProp name="Argument.name">think_time_deviation</stringProp>
             <stringProp name="Argument.value">${__jexl3((${__P(tt_max,5000)} - ${__P(tt_min,1000)}) / 2)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
@@ -349,6 +349,21 @@
             <hashTree/>
           </hashTree>
         </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - Think Time"/>
+        <hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Think Time">
+              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
+              <stringProp name="RandomTimer.range">${think_time_deviation}</stringProp>
+            </GaussianRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="S01_Browse_And_Checkout" enabled="true">
         <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
@@ -389,17 +404,15 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-        </TestAction>
-        <hashTree>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-            <stringProp name="ConstantTimer.delay">${think_time}</stringProp>
-          </ConstantTimer>
-          <hashTree/>
-        </hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+            <stringProp name="75491667">TF - Reusable Modules</stringProp>
+            <stringProp name="2031142686">SC - Think Time</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T02_NavigateToTables" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -438,18 +451,15 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-        </TestAction>
-        <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-            <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-            <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-          </UniformRandomTimer>
-          <hashTree/>
-        </hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+            <stringProp name="75491667">TF - Reusable Modules</stringProp>
+            <stringProp name="2031142686">SC - Think Time</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T03_OpenTableProductCard" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -507,18 +517,15 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-        </TestAction>
-        <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-            <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-            <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-          </UniformRandomTimer>
-          <hashTree/>
-        </hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+            <stringProp name="75491667">TF - Reusable Modules</stringProp>
+            <stringProp name="2031142686">SC - Think Time</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T04_AddTableToCart" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -570,18 +577,15 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-          <intProp name="ActionProcessor.action">1</intProp>
-          <intProp name="ActionProcessor.target">0</intProp>
-          <stringProp name="ActionProcessor.duration">0</stringProp>
-        </TestAction>
-        <hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-            <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-            <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-          </UniformRandomTimer>
-          <hashTree/>
-        </hashTree>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="764597751">Test Plan</stringProp>
+            <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+            <stringProp name="75491667">TF - Reusable Modules</stringProp>
+            <stringProp name="2031142686">SC - Think Time</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="ThC - AddChair" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
           <boolProp name="ThroughputController.perThread">false</boolProp>
@@ -640,18 +644,15 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T06_OpenChairProductCard" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -709,18 +710,15 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T07_AddChairToCart" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -772,18 +770,15 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
         </hashTree>
         <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="ThC - Checkout" enabled="true">
           <intProp name="ThroughputController.style">1</intProp>
@@ -811,18 +806,15 @@
             </ModuleController>
             <hashTree/>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T09_OpenCheckout" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -838,19 +830,16 @@
             </ModuleController>
             <hashTree/>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T10_FillCheckoutFields" enabled="true">
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T10_LoadStateDropdown" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -927,18 +916,15 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T11_SubmitOrder" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -1205,18 +1191,15 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
-            <intProp name="ActionProcessor.action">1</intProp>
-            <intProp name="ActionProcessor.target">0</intProp>
-            <stringProp name="ActionProcessor.duration">0</stringProp>
-          </TestAction>
-          <hashTree>
-            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Pause" enabled="true">
-              <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
-              <stringProp name="RandomTimer.range">${think_time_spread}</stringProp>
-            </UniformRandomTimer>
-            <hashTree/>
-          </hashTree>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="MC - Think Time" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-722513666">Performance Testing Essentials - Load Test</stringProp>
+              <stringProp name="75491667">TF - Reusable Modules</stringProp>
+              <stringProp name="2031142686">SC - Think Time</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If - Order Redirected To ThankYou" enabled="true">
             <stringProp name="IfController.condition">${__jexl3(vars.get(&quot;redirect_url&quot;) != &quot;redirect_url_NOT_FOUND&quot; &amp;&amp; vars.get(&quot;redirect_url&quot;).contains(&quot;thank-you&quot;))}</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>

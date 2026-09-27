@@ -1,0 +1,13 @@
+From the current directory, run in PowerShell:
+
+$ProjectDir = (Get-Location).Path
+
+$RunDir = Join-Path $ProjectDir ("LoadTest_" + (Get-Date -Format "yyyyMMdd"))
+
+$ReportDir = Join-Path $RunDir "report"
+
+New-Item -ItemType Directory -Path $RunDir -Force | Out-Null
+
+New-Item -ItemType Directory -Path $ReportDir -Force | Out-Null
+
+& "$env:JMETER_HOME\bin\jmeter.bat" -n -t "$ProjectDir\PerformanceEssentials.jmx" -l "$RunDir\results.jtl" -j "$RunDir\jmeter.log" -e -o "$ReportDir" *> "$RunDir\console.log"

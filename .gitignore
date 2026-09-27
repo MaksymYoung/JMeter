@@ -1,0 +1,11 @@
+# IDE and editor metadata
+.idea/
+*.iml
+.vscode/
+
+# Local runtime artifacts
+*.tmp
+*.bak
+*.swp
+Thumbs.db
+Desktop.ini
