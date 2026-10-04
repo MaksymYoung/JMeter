@@ -87,9 +87,24 @@
       <hashTree/>
       <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
         <collectionProp name="Arguments.arguments">
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="app" elementType="Argument">
+            <stringProp name="Argument.name">app</stringProp>
+            <stringProp name="Argument.value">${__P(app,localhost)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="port" elementType="Argument">
+            <stringProp name="Argument.name">port</stringProp>
+            <stringProp name="Argument.value">80</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="base_url" elementType="Argument">
             <stringProp name="Argument.name">base_url</stringProp>
-            <stringProp name="Argument.value">${protocol}://${app}</stringProp>
+            <stringProp name="Argument.value">${protocol}://${app}:${port}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="connect_timeout" elementType="Argument">
@@ -117,21 +132,6 @@
             <stringProp name="Argument.value">${__P(loops,5)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="think_time" elementType="Argument">
-            <stringProp name="Argument.name">think_time</stringProp>
-            <stringProp name="Argument.value">${__P(think_time,2000)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="think_time_min" elementType="Argument">
-            <stringProp name="Argument.name">think_time_min</stringProp>
-            <stringProp name="Argument.value">${__P(tt_min,1000)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="think_time_max" elementType="Argument">
-            <stringProp name="Argument.name">think_time_max</stringProp>
-            <stringProp name="Argument.value">${__P(tt_max,5000)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
           <elementProp name="think_time_center" elementType="Argument">
             <stringProp name="Argument.name">think_time_center</stringProp>
             <stringProp name="Argument.value">${__jexl3((${__P(tt_min,1000)} + ${__P(tt_max,5000)}) / 2)}</stringProp>
@@ -140,21 +140,6 @@
           <elementProp name="think_time_deviation" elementType="Argument">
             <stringProp name="Argument.name">think_time_deviation</stringProp>
             <stringProp name="Argument.value">${__jexl3((${__P(tt_max,5000)} - ${__P(tt_min,1000)}) / 2)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="protocol" elementType="Argument">
-            <stringProp name="Argument.name">protocol</stringProp>
-            <stringProp name="Argument.value">http</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="app" elementType="Argument">
-            <stringProp name="Argument.name">app</stringProp>
-            <stringProp name="Argument.value">localhost</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="port" elementType="Argument">
-            <stringProp name="Argument.name">port</stringProp>
-            <stringProp name="Argument.value">80</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -179,10 +164,6 @@
             <stringProp name="Header.name">User-Agent</stringProp>
             <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36</stringProp>
           </elementProp>
-          <elementProp name="Accept" elementType="Header">
-            <stringProp name="Header.name">Accept</stringProp>
-            <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
-          </elementProp>
           <elementProp name="Accept-Language" elementType="Header">
             <stringProp name="Header.name">Accept-Language</stringProp>
             <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8,uk;q=0.7</stringProp>
@@ -198,18 +179,6 @@
           <elementProp name="sec-ch-ua-platform" elementType="Header">
             <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
             <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
-          </elementProp>
-          <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
-            <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
-            <stringProp name="Header.value">1</stringProp>
-          </elementProp>
-          <elementProp name="Origin" elementType="Header">
-            <stringProp name="Header.name">Origin</stringProp>
-            <stringProp name="Header.value">${base_url}</stringProp>
-          </elementProp>
-          <elementProp name="Referer" elementType="Header">
-            <stringProp name="Header.name">Referer</stringProp>
-            <stringProp name="Header.value">${base_url}/</stringProp>
           </elementProp>
         </collectionProp>
       </HeaderManager>
@@ -302,7 +271,7 @@
               <stringProp name="RegexExtractor.refname">trans_id</stringProp>
               <stringProp name="RegexExtractor.regex">value=&quot;(\d+)&quot; name=&quot;trans_id&quot;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">${__time(yyyyMMddHHmmssSSS)}</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
@@ -312,7 +281,7 @@
               <stringProp name="RegexExtractor.refname">cart_content</stringProp>
               <stringProp name="RegexExtractor.regex">name=&quot;cart_content&quot; value=&quot;(.+?)&quot;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">{}</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
@@ -322,7 +291,7 @@
               <stringProp name="RegexExtractor.refname">total_net</stringProp>
               <stringProp name="RegexExtractor.regex">name=&quot;total_net&quot; value=&quot;([\d.]+)&quot;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">0.00</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
@@ -349,15 +318,15 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - Think Time"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="SC - Think Time" enabled="true"/>
         <hashTree>
-          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time">
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Think Time" enabled="true">
             <intProp name="ActionProcessor.action">1</intProp>
             <intProp name="ActionProcessor.target">0</intProp>
             <stringProp name="ActionProcessor.duration">0</stringProp>
           </TestAction>
           <hashTree>
-            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Think Time">
+            <GaussianRandomTimer guiclass="GaussianRandomTimerGui" testclass="GaussianRandomTimer" testname="Gaussian Think Time" enabled="true">
               <stringProp name="ConstantTimer.delay">${think_time_center}</stringProp>
               <stringProp name="RandomTimer.range">${think_time_deviation}</stringProp>
             </GaussianRandomTimer>
@@ -369,13 +338,22 @@
         <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${rampup}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
-        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
           <stringProp name="LoopController.loops">${loops}</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager - HTML Navigation Defaults" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="Accept" elementType="Header">
+              <stringProp name="Header.name">Accept</stringProp>
+              <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T01_OpenApplication" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -429,15 +407,34 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Referer" elementType="Header">
+                  <stringProp name="Header.name">Referer</stringProp>
+                  <stringProp name="Header.value">${base_url}/</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
             <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Extract Table Product Link" enabled="true">
               <stringProp name="RegexExtractor.useHeaders">false</stringProp>
               <stringProp name="RegexExtractor.refname">table_slug</stringProp>
               <stringProp name="RegexExtractor.regex">/products/([a-z0-9\-]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">living-room-table8</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">0</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Table Product Link Present" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="43289004">/products/[a-z0-9\-]+</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Tables category page did not contain a product link</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Tables Page" enabled="true">
               <collectionProp name="Asserion.test_strings">
@@ -490,7 +487,7 @@
               <stringProp name="RegexExtractor.refname">table_id</stringProp>
               <stringProp name="RegexExtractor.regex">name=&quot;current_product&quot; value=&quot;(\d+)&quot;</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">121</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
@@ -500,10 +497,21 @@
               <stringProp name="RegexExtractor.refname">table_price</stringProp>
               <stringProp name="RegexExtractor.regex">price-value-\d+[^&gt;]*&gt;\s*\$?([\d.]+)</stringProp>
               <stringProp name="RegexExtractor.template">$1$</stringProp>
-              <stringProp name="RegexExtractor.default">420.00</stringProp>
+              <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
               <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
               <stringProp name="RegexExtractor.match_number">1</stringProp>
             </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Table Product Data Present" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-974970018">name=&quot;current_product&quot; value=&quot;\d+&quot;</stringProp>
+                <stringProp name="-1903762922">price-value-\d+[^&gt;]*&gt;\s*\$?[\d.]+</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message">Table product page did not contain product id or price</stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+            </ResponseAssertion>
             <hashTree/>
             <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Table Product Page" enabled="true">
               <collectionProp name="Asserion.test_strings">
@@ -550,6 +558,10 @@
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
               <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
                 <elementProp name="Content-Type" elementType="Header">
                   <stringProp name="Header.name">Content-Type</stringProp>
                   <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
@@ -627,10 +639,20 @@
                 <stringProp name="RegexExtractor.refname">chair_slug</stringProp>
                 <stringProp name="RegexExtractor.regex">/products/([a-z0-9\-]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
-                <stringProp name="RegexExtractor.default">modern-chair8</stringProp>
+                <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
                 <stringProp name="RegexExtractor.match_number">0</stringProp>
               </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Chair Product Link Present" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="43289004">/products/[a-z0-9\-]+</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message">Chairs category page did not contain a product link</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+              </ResponseAssertion>
               <hashTree/>
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Chairs Page" enabled="true">
                 <collectionProp name="Asserion.test_strings">
@@ -683,7 +705,7 @@
                 <stringProp name="RegexExtractor.refname">chair_id</stringProp>
                 <stringProp name="RegexExtractor.regex">name=&quot;current_product&quot; value=&quot;(\d+)&quot;</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
-                <stringProp name="RegexExtractor.default">91</stringProp>
+                <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
@@ -693,7 +715,7 @@
                 <stringProp name="RegexExtractor.refname">chair_price</stringProp>
                 <stringProp name="RegexExtractor.regex">price-value-\d+[^&gt;]*&gt;\s*\$?([\d.]+)</stringProp>
                 <stringProp name="RegexExtractor.template">$1$</stringProp>
-                <stringProp name="RegexExtractor.default">164.00</stringProp>
+                <stringProp name="RegexExtractor.default">NOT_FOUND</stringProp>
                 <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
@@ -701,6 +723,7 @@
               <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert Chair Product Page" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="2061420649">name=&quot;current_product&quot;</stringProp>
+                  <stringProp name="1264255456">price-value-</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.custom_message">Chair product page did not load</stringProp>
                 <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -743,6 +766,10 @@
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
                     <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
@@ -879,6 +906,10 @@
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Accept" elementType="Header">
+                    <stringProp name="Header.name">Accept</stringProp>
+                    <stringProp name="Header.value">*/*</stringProp>
+                  </elementProp>
                   <elementProp name="Content-Type" elementType="Header">
                     <stringProp name="Header.name">Content-Type</stringProp>
                     <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
@@ -970,13 +1001,6 @@
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">shipping</stringProp>
                     <stringProp name="Argument.value">order</stringProp>
-                    <stringProp name="Argument.metadata">=</stringProp>
-                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                  </elementProp>
-                  <elementProp name="cart_content" elementType="HTTPArgument">
-                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.name">cart_content</stringProp>
-                    <stringProp name="Argument.value">${cart_content}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -1162,6 +1186,10 @@
               <hashTree/>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
+                  <elementProp name="Origin" elementType="Header">
+                    <stringProp name="Header.name">Origin</stringProp>
+                    <stringProp name="Header.value">${base_url}</stringProp>
+                  </elementProp>
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
                     <stringProp name="Header.value">${base_url}/checkout</stringProp>
@@ -1201,7 +1229,7 @@
           </ModuleController>
           <hashTree/>
           <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If - Order Redirected To ThankYou" enabled="true">
-            <stringProp name="IfController.condition">${__jexl3(vars.get(&quot;redirect_url&quot;) != &quot;redirect_url_NOT_FOUND&quot; &amp;&amp; vars.get(&quot;redirect_url&quot;).contains(&quot;thank-you&quot;))}</stringProp>
+            <stringProp name="IfController.condition">${__strMatches(${redirect_url},.*thank-you.*)}</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
             <boolProp name="IfController.useExpression">true</boolProp>
           </IfController>
