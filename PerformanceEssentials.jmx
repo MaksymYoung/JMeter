@@ -85,8 +85,13 @@
         <boolProp name="useGroupName">true</boolProp>
       </ResultCollector>
       <hashTree/>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments">
+          <elementProp name="scenario_name" elementType="Argument">
+            <stringProp name="Argument.name">scenario_name</stringProp>
+            <stringProp name="Argument.value">${__P(scenario_name,S01_Browse_And_Checkout)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
           <elementProp name="protocol" elementType="Argument">
             <stringProp name="Argument.name">protocol</stringProp>
             <stringProp name="Argument.value">http</stringProp>
@@ -334,7 +339,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="S01_Browse_And_Checkout" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="${scenario_name}">
         <stringProp name="ThreadGroup.num_threads">${threads}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${rampup}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -354,7 +359,7 @@
           </collectionProp>
         </HeaderManager>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T01_OpenApplication" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T01_OpenApplication">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -391,7 +396,7 @@
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T02_NavigateToTables" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T02_NavigateToTables" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -457,7 +462,7 @@
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T03_OpenTableProductCard" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T03_OpenTableProductCard" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -534,7 +539,7 @@
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T04_AddTableToCart" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T04_AddTableToCart" enabled="true">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
@@ -609,7 +614,7 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T05_NavigateToChairs" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T05_NavigateToChairs" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -675,7 +680,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T06_OpenChairProductCard" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T06_OpenChairProductCard" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -742,7 +747,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T07_AddChairToCart" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T07_AddChairToCart" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -818,7 +823,7 @@
           </FloatProperty>
         </ThroughputController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T08_OpenCart" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T08_OpenCart" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -842,7 +847,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T09_OpenCheckout" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T09_OpenCheckout" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -866,7 +871,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T10_LoadStateDropdown" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T10_LoadStateDropdown" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -956,7 +961,7 @@
             </collectionProp>
           </ModuleController>
           <hashTree/>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T11_SubmitOrder" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T11_SubmitOrder">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -1176,11 +1181,30 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 - Inject Product Price Fields" enabled="true">
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 - Inject Product Price Fields">
                 <stringProp name="scriptLanguage">groovy</stringProp>
                 <stringProp name="parameters"></stringProp>
-                <stringProp name="filename">${__groovy(org.apache.jmeter.services.FileServer.getFileServer().getBaseDir() + java.io.File.separator + &apos;scripts&apos; + java.io.File.separator + &apos;inject-product-price-fields.groovy&apos;)}</stringProp>
-                <stringProp name="script"></stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="script">import org.apache.jmeter.protocol.http.util.HTTPArgument;
+import java.util.ArrayList;
+args = sampler.getArguments();
+toRemove = new ArrayList();
+for (int i = 0; i &lt; args.getArgumentCount(); i++) {
+  if (args.getArgument(i).getName().startsWith(&quot;product_price_&quot;)) { toRemove.add(args.getArgument(i)); }
+}
+for (int i = 0; i &lt; toRemove.size(); i++) { args.removeArgument(toRemove.get(i)); }
+
+int count = (vars.get(&quot;product_price_matchNr&quot;) ?: &quot;0&quot;) as int;
+for (int i = 1; i &lt;= count; i++) {
+  String field = vars.get(&quot;product_price_&quot; + i);
+  if (field == null || !field.contains(&quot;=&quot;)) { continue; }
+
+  String[] parts = field.split(&quot;=&quot;, 2);
+  HTTPArgument arg = new HTTPArgument(parts[0], parts[1]);
+  arg.setAlwaysEncoded(false);
+  arg.setUseEquals(true);
+  args.addArgument(arg);
+}</stringProp>
                 <stringProp name="cacheKey">true</stringProp>
               </JSR223PreProcessor>
               <hashTree/>
@@ -1234,7 +1258,7 @@
             <boolProp name="IfController.useExpression">true</boolProp>
           </IfController>
           <hashTree>
-            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="S01_Browse_And_Checkout_T12_ThankYou" enabled="true">
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="${scenario_name}_T12_ThankYou" enabled="true">
               <boolProp name="TransactionController.parent">true</boolProp>
               <boolProp name="TransactionController.includeTimers">false</boolProp>
             </TransactionController>
